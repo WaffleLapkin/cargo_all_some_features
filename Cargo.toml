@@ -1,0 +1,23 @@
+[package]
+name = "cargo_all_some_features"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tracing = "0.1.29"
+
+[features]
+# A lot of features that you don't want to specify by hand
+aaaaaaaa = []
+bbbbbbbb = []
+cccccccc = []
+dddddddd = []
+eeeeeeee = []
+ffffffff = []
+gggggggg = []
+
+[[example]]
+name = "example"
+required-features = ["aaaaaaaa", "bbbbbbbb", "cccccccc", "dddddddd", "eeeeeeee", "ffffffff", "gggggggg", "tracing/log"]

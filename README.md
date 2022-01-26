@@ -1,0 +1,1 @@
+An example of a weird cargo behavior, try running the example with `cargo run --example example --all-features --features "tracing/log"`
